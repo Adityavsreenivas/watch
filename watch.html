@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shopping Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            padding: 10px 0;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f1f1f1;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Watch Shopping</h1>
+        </header>
+        <main>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Watch Brand:</label>
+                    <select id="brand" name="brand" required>
+                        <option value="rolex">Rolex</option>
+                        <option value="omega">Omega</option>
+                        <option value="seiko">Seiko</option>
+                        <option value="tagheuer">TAG Heuer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type">Watch Type:</label>
+                    <select id="type" name="type" required>
+                        <option value="analog">Analog</option>
+                        <option value="digital">Digital</option>
+                        <option value="smart">Smart</option>
+                        <option value="automatic">Automatic</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Watch Shopping. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
